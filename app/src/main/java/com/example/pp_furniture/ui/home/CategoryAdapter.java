@@ -78,7 +78,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                     break;
 
                     case "Кухонная мебель":
-
+                        navController = Navigation.findNavController((Activity) itemView.getContext(),
+                                R.id.nav_host_fragment_activity_main);
+                        navController.navigate(R.id.action_navigation_home_to_kitchenFragment);
                         break;
 
                     case "Юношеские гарнитуры":

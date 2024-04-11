@@ -23,6 +23,10 @@
         <action
             android:id="@+id/action_navigation_home_to_saleFragment"
             app:destination="@id/saleFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_kitchenFragment"
+            app:destination="@id/kitchenFragment" />
+
     </fragment>
 
     <fragment
@@ -69,6 +73,15 @@
         tools:layout="@layout/fragment_description" >
         <action
             android:id="@+id/action_descriptionFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitchenFragment"
+        android:name="com.example.pp_furniture.ui.kitchen.KitchenFragment"
+        android:label="fragment_kitchen"
+        tools:layout="@layout/fragment_kitchen" >
+        <action
+            android:id="@+id/action_kitchenFragment_to_navigation_home2"
             app:destination="@id/navigation_home" />
     </fragment>
 </navigation>
