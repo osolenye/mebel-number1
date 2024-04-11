@@ -6,7 +6,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/gray"
+    >
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lotty_sale"
@@ -61,5 +63,12 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotty_discout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="15dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 
 </LinearLayout>

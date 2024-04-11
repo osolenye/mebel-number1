@@ -28,6 +28,7 @@ public class HomeFragment extends Fragment {
     List<CategoryModel> list_category = new ArrayList<>();
     CategoryAdapter adapter;
     LottieAnimationView lotty_sale;
+    LottieAnimationView lotty_discount;
     NavController navController;
 
 
@@ -41,6 +42,8 @@ public class HomeFragment extends Fragment {
         lotty_sale = binding.lottySale;
         lotty_sale.setAnimation(R.raw.furniture);
 
+        lotty_discount = binding.lottyDiscout;
+        lotty_discount.setAnimation(R.raw.discount_lottie);
 
         createList();
         adapter = new CategoryAdapter();

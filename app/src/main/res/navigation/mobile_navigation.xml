@@ -26,6 +26,12 @@
         <action
             android:id="@+id/action_navigation_home_to_kitchenFragment"
             app:destination="@id/kitchenFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_youngProducts"
+            app:destination="@id/youngProducts" />
+        <action
+            android:id="@+id/action_navigation_home_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
 
     </fragment>
 
@@ -82,6 +88,24 @@
         tools:layout="@layout/fragment_kitchen" >
         <action
             android:id="@+id/action_kitchenFragment_to_navigation_home2"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/youngProducts"
+        android:name="com.example.pp_furniture.YoungProducts"
+        android:label="fragment_young_products"
+        tools:layout="@layout/fragment_young_products" >
+        <action
+            android:id="@+id/action_youngProducts_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.pp_furniture.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
     </fragment>
 </navigation>

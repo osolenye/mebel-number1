@@ -84,7 +84,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                         break;
 
                     case "Юношеские гарнитуры":
-
+                        navController = Navigation.findNavController((Activity) itemView.getContext(),
+                                R.id.nav_host_fragment_activity_main);
+                        navController.navigate(R.id.action_navigation_home_to_youngProducts);
                         break;
 
                     case "Садовая мебель":
@@ -95,7 +97,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                         break;
 
                     case "Мебель для прихожей":
-
+                        navController = Navigation.findNavController((Activity) itemView.getContext(),
+                                R.id.nav_host_fragment_activity_main);
+                        navController.navigate(R.id.action_navigation_home_to_welcomeFragment);
                         break;
 
                     default:
