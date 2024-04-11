@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:background="#AEF8A1">
+            android:background="@color/lime">
 
             <TextView
                 android:id="@+id/price_card"
